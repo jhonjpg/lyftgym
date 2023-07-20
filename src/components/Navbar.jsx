@@ -211,7 +211,7 @@ onClick={hideMenu}
 <div className={menu ? "devices " : "devices active"}>
 
 
-<div className="log"><img src="../public/gymmlogo.jpg" alt=""  /></div>
+<div className="log"><img src="gymmlogo.jpg" alt=""  /></div>
 
 
 
