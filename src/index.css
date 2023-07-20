@@ -14,7 +14,7 @@
     height: 1020px;
     width: 100%;
     gap: 1em;
-    background-image: url('../img/gymFront.jpg');
+    background-image: url('/img/gymFront.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -92,7 +92,6 @@
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    background-color: #000;
     overflow: hidden;
     color: var(--letter-light);
 }
@@ -215,7 +214,6 @@
     justify-content: center;
     flex-direction: column;
     gap: 1em;
-    background-color: rgb(12, 12, 12);
     width: 100%;
     color: var(--letter-light);
 }
@@ -311,7 +309,6 @@
     flex-direction: column;
     gap: 1em;
     width: 100%;
-    background-color: #000;
 }
 
 #prices h3 {
@@ -320,8 +317,6 @@
 }
 
 #prices h4 {
-    font-weight: bold;
-    margin-bottom: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size: 3em;
@@ -331,7 +326,6 @@
     display: flex;
     justify-content: center;
     width: 100% !important;
-    background-color: rgb(15, 15, 15);
     height: 500px;
     overflow: hidden;
 }
@@ -479,7 +473,6 @@ h4 {
     justify-content: space-evenly;
     width: 100%;
     padding: 1em !important;
-    background-color: #000;
     padding-top: 30px !important;
 }
 
@@ -530,7 +523,6 @@ h4 {
     align-items: center;
     gap: 1em;
     width: 100%;
-    background-color: rgb(15, 15, 15);
     padding-top: 1em!important;
 }
 
@@ -576,7 +568,7 @@ button {
 /* trainers */
 
 #trainer {
-    background-color: black;
+    background-color: rgb(12, 12, 12);
 }
 
 #trainer h3 {
@@ -703,7 +695,6 @@ button {
 /*#contact */
 
 #contact {
-    background-color: rgb(10, 10, 10);
     color: white;
     padding: 14px;
 }
