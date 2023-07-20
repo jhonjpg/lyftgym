@@ -14,7 +14,7 @@
     height: 1020px;
     width: 100%;
     gap: 1em;
-    background-image: url('https://cdn.pixabay.com/photo/2016/12/04/22/15/fitness-1882721_1280.jpg');
+    background-image: url('../img/gymFront.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
