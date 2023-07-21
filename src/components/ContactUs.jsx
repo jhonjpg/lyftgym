@@ -24,7 +24,7 @@ const ContactUs = () => {
 
 <li>
 
-<i className="bi bi-envelope-fill"></i> blinkgfd@gmail.com
+<i className="bi bi-envelope-fill"></i> lyftgym@gmail.com
 
 </li>
 
@@ -38,7 +38,7 @@ const ContactUs = () => {
 
 <li>
 
-<i className="bi bi-stopwatch-fill"></i>Lunes-Sabado: 5:00Am-9:00Pm Domingo: 7:00Am-2:00Pm 
+<i className="bi bi-stopwatch-fill"></i>Lunes-Sabado: 5:00Am-9:00Pm - Domingo: 7:00Am-2:00Pm 
 
 </li>
 

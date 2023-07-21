@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import { Link as ScrollLink, animateScroll } from 'react-scroll';
 
@@ -7,11 +7,32 @@ import { Link as ScrollLink, animateScroll } from 'react-scroll';
 const Navbar = () => {
 
 
+  const [linkColor, setLinkColor] = useState('white');
+
+
+
+
+
+
+
 
   const [toggleOn, settoggleOn] = useState(false)
 
   const [menu, setmenu] = useState(true);
   const [menuDos, setmenuDos] = useState(false);
+
+                        // links//
+  const [linkColorInicio, setLinkColorInicio] = useState('white');
+  const [linkColorNosotros, setLinkColorNosotros] = useState('white');
+  const [linkColorWhy, setLinkColorWhy] = useState('white');
+  const [linkColorPrices, setLinkColorPrices] = useState('white');
+  const [linkColorGaleria, setLinkColorGaleria] = useState('white');
+  const [linkColorTrainer, setLinkTrainer] = useState('white');
+  const [linkColorContact, setLinkContact] = useState('white');
+
+
+
+
 
 
   const responsiveClass = `ulNvResponsive ${menuDos ? "ulNvResponsive active" : ""}`
@@ -41,13 +62,13 @@ const reponsiveMenu = () => {
 }
 
 
-const handleScroll = () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'auto'
-  })
+// const handleScroll = () => {
+//   window.scrollTo({
+//     top: 0,
+//     behavior: 'auto'
+//   })
 
-}
+// }
 
 const change = (e) => {
 
@@ -59,10 +80,73 @@ const change = (e) => {
 
   }
 
+  console.log(window.scrollY)
+
+
+
+  if (window.scrollY < 530) {
+    setLinkColorInicio('yellow');
+
+  } else {
+    setLinkColorInicio('white');
+  }
+
+  if (window.scrollY > 530 &&  window.scrollY <= 1125) {
+    setLinkColorNosotros('yellow');
+  } else {
+    setLinkColorNosotros('white');
+  }
+
+
+
+  if (window.scrollY > 1125 &&  window.scrollY <= 1600) {
+    setLinkColorWhy('yellow');
+  } else {
+    setLinkColorWhy('white');
+  }
+
+
+
+  if (window.scrollY > 1600 &&  window.scrollY <= 2278) {
+    setLinkColorPrices('yellow');
+  } else {
+    setLinkColorPrices('white');
+  }
+
+
+
+  if (window.scrollY > 2278 &&  window.scrollY <= 2710) {
+    setLinkColorGaleria('yellow');
+  } else {
+    setLinkColorGaleria('white');
+  }
+
+
+
+  if (window.scrollY > 2710 &&  window.scrollY <= 3082) {
+    setLinkTrainer('yellow');
+  } else {
+    setLinkTrainer('white');
+  }
+
+
+  if (window.scrollY > 3082 &&  window.scrollY <= 3400) {
+    setLinkContact('yellow');
+  } else {
+    setLinkContact('white');
+  }
+
 
 }
 
+
+
+
+
+
 window.addEventListener("scroll", change)
+
+
 
 
 
@@ -105,6 +189,8 @@ spy={true}
 exact="true"
 className="nav-item"
 onClick={hideMenu}
+style={{ color: linkColor }}
+
 
 > Inicio
 </ScrollLink>
@@ -120,6 +206,7 @@ spy={true}
 exact="true"
 className="nav-item" 
 onClick={hideMenu}
+style={{ color: linkColor }}
 > Nosotros
 </ScrollLink>
 </li>
@@ -134,6 +221,7 @@ spy={true}
 exact="true"
 className="nav-item"
 onClick={hideMenu}
+style={{ color: linkColor }}
 >  Porque Nosotros?
 </ScrollLink>
 </li>
@@ -148,6 +236,7 @@ spy={true}
 exact="true"
 className="nav-item"
 onClick={hideMenu}
+style={{ color: linkColor }}
 >  Precios</ScrollLink></li>
      
      
@@ -160,6 +249,7 @@ spy={true}
 exact="true"
 className="nav-item"
 onClick={hideMenu}
+style={{ color: linkColor }}
 >  Galeria</ScrollLink></li>
 
 
@@ -172,6 +262,7 @@ spy={true}
 exact="true"
 className="nav-item"
 onClick={hideMenu}
+style={{ color: linkColor }}
 >  Entrenadores</ScrollLink></li>
 
 
@@ -184,6 +275,7 @@ spy={true}
 exact="true"
 className="nav-item"
 onClick={hideMenu}
+style={{ color: linkColor }}
 >  Contacto</ScrollLink></li>
 
 
@@ -224,7 +316,9 @@ onClick={hideMenu}
   offset={-70} // Ajusta el valor según el tamaño de tu Navbar
   spy={true}
   exact="true"
-  className="nav-item" > Inicio</ScrollLink></li>
+  className="nav-item"
+  style={{ color: linkColorInicio }}
+  > Inicio</ScrollLink></li>
                  
          <li className="nav-item"> < ScrollLink
   to="aboutPerformance"
@@ -233,7 +327,8 @@ onClick={hideMenu}
   offset={-70} // Ajusta el valor según el tamaño de tu Navbar
   spy={true}
   exact="true"
-  className="nav-item" > Nosotros</ScrollLink></li>
+  className="nav-item"
+  style={{ color: linkColorNosotros }} > Nosotros</ScrollLink></li>
          
          <li className="nav-item"> < ScrollLink
   to="whyUs"
@@ -242,7 +337,8 @@ onClick={hideMenu}
   offset={-70} // Ajusta el valor según el tamaño de tu Navbar
   spy={true}
   exact="true"
-  className="nav-item">  Porque Nosotros?</ScrollLink></li>
+  className="nav-item"
+  style={{ color: linkColorWhy }}>  Porque Nosotros?</ScrollLink></li>
 
 
          <li className="nav-item"> < ScrollLink
@@ -252,7 +348,8 @@ onClick={hideMenu}
   offset={-70} // Ajusta el valor según el tamaño de tu Navbar
   spy={true}
   exact="true"
-  className="nav-item">  Precios</ScrollLink></li>
+  className="nav-item"
+  style={{ color: linkColorPrices }}>  Precios</ScrollLink></li>
          
          
          <li className="nav-item"> < ScrollLink
@@ -262,7 +359,8 @@ onClick={hideMenu}
   offset={-70} // Ajusta el valor según el tamaño de tu Navbar
   spy={true}
   exact="true"
-  className="nav-item">  Galeria</ScrollLink></li>
+  className="nav-item"
+  style={{ color: linkColorGaleria }}>  Galeria</ScrollLink></li>
 
 
          <li className="nav-item"> < ScrollLink
@@ -272,7 +370,8 @@ onClick={hideMenu}
   offset={-70} // Ajusta el valor según el tamaño de tu Navbar
   spy={true}
   exact="true"
-  className="nav-item">  Entrenadores</ScrollLink></li>
+  className="nav-item"
+  style={{ color: linkColorTrainer }}>  Entrenadores</ScrollLink></li>
 
 
          <li className="nav-item"> < ScrollLink
@@ -282,7 +381,8 @@ onClick={hideMenu}
   offset={-70} // Ajusta el valor según el tamaño de tu Navbar
   spy={true}
   exact="true"
-  className="nav-item">  Contacto</ScrollLink></li>
+  className="nav-item"
+  style={{ color: linkColorContact }}>  Contacto</ScrollLink></li>
 
 
 
