@@ -11,11 +11,7 @@
 }
 
 .frontimgPage {
-    background-image: url('../img/gymFront.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -23,6 +19,17 @@
     height: 100%;
     width: 100%;
     gap: 1em;
+}
+
+.containerImg {
+    position: absolute;
+    width: 100%;
+}
+
+.frontimgPage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 #journey .header {
