@@ -6,7 +6,12 @@
 }
 
 #journey {
-    position: relative;
+    background-image: url('/img/imgGym.jpg') !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -14,12 +19,6 @@
     height: 1020px;
     width: 100%;
     gap: 1em;
-    background-image: url('/img/imgGym.jpg') !important;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: hidden;
 }
 
 #journey .header {
