@@ -11,7 +11,7 @@
 }
 
 .frontimgPage {
-    background-image: url('img/gymFront.jpg');
+    background-image: url('../img/gymFront.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
