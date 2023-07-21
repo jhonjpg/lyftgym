@@ -8,7 +8,7 @@ const FrontPg = () => {
 
 <section id="journey">
 
-
+<div className="frontimgPage">
 <div className="header"> 
 <h3 className="z-3">Empieza tu Entrenamiento </h3> <span className="z-3">Hoy</span> <p className="z-3"> Ven unete a nosotros   y empieza a start mas cerca de tu cuerpo deseado</p>
 
@@ -27,7 +27,7 @@ const FrontPg = () => {
 
 
 
-
+</div>
 
 
 </section>
