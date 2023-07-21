@@ -25,7 +25,6 @@ const FrontPg = () => {
 
 </div>
 
-<div className="opacity"></div>
 
 
 
