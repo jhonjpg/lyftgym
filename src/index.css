@@ -11,7 +11,7 @@
 }
 
 .frontimgPage {
-    background-image: url('/img/gymFront.jpg');
+    background-image: url('img/gymFront.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -337,6 +337,12 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
     font-size: 3em;
+}
+
+.phonePrices h6 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 .phonePrices div {

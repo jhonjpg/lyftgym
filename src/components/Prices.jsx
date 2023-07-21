@@ -38,7 +38,7 @@ const Prices = () => {
 
 <strong>Basic</strong>
 
-<h4>$39/month</h4>
+<h6>$39/month</h6>
 
 <ul className="w-100 ">
 
@@ -66,7 +66,7 @@ const Prices = () => {
 
 <strong>Plus</strong>
 
-<h4>$59/month</h4>
+<h6>$59/month</h6>
 
 <ul>
 
@@ -89,7 +89,7 @@ const Prices = () => {
 
 <strong>VIP</strong>
 
-<h4>$99/month</h4>
+<h6>$99/month</h6>
 
 <ul>
 
