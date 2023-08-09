@@ -30,7 +30,7 @@ const About = () => {
 </p>
 <p>  "Nuestra misión es inspirar y motivar a las personas a alcanzar sus metas de bienestar físico y mental, proporcionando un entorno acogedor y de apoyo para su transformación personal. .</p>
 
-
+<p className={hideClass}>Ofrecemos una amplia gama de clases grupales diseñadas para mantener tus entrenamientos frescos y emocionantes. Desde clases de alta intensidad como HIIT y entrenamiento en circuito, hasta opciones más relajantes como yoga y pilates, tenemos algo para todos los gustos y niveles de habilidad.</p>
 <p className={hideClass}> ¡Es hora de desbloquear tu máximo potencial en Es hora de desbloquear tu máximo potencial en lyftgym!"
 
 

@@ -41,7 +41,16 @@ const SlickCarousel = () => {
     };
 
 
-    const liftImage = ["https://images.pexels.com/photos/5327478/pexels-photo-5327478.jpeg?auto=compress&cs=tinysrgb&w=1200","https://images.pexels.com/photos/3490348/pexels-photo-3490348.jpeg?auto=compress&cs=tinysrgb&w=1200", "https://images.pexels.com/photos/4164759/pexels-photo-4164759.jpeg?auto=compress&cs=tinysrgb&w=1200", "https://images.pexels.com/photos/5327465/pexels-photo-5327465.jpeg?auto=compress&cs=tinysrgb&w=1200", "https://images.pexels.com/photos/5327531/pexels-photo-5327531.jpeg?auto=compress&cs=tinysrgb&w=1200", "https://images.pexels.com/photos/3838706/pexels-photo-3838706.jpeg?auto=compress&cs=tinysrgb&w=1200", "https://images.pexels.com/photos/14335658/pexels-photo-14335658.jpeg?auto=compress&cs=tinysrgb&w=1200", "https://images.pexels.com/photos/4162445/pexels-photo-4162445.jpeg?auto=compress&cs=tinysrgb&w=1200", "https://images.pexels.com/photos/14623627/pexels-photo-14623627.jpeg?auto=compress&cs=tinysrgb&w=1200", "https://images.pexels.com/photos/13965336/pexels-photo-13965336.jpeg?auto=compress&cs=tinysrgb&w=1200"]
+    const liftImage = ["https://cdn.pixabay.com/photo/2013/03/09/14/38/gym-91849_1280.jpg",
+    "https://cdn.pixabay.com/photo/2014/06/23/19/35/fitness-375472_1280.jpg", 
+    "https://cdn.pixabay.com/photo/2015/01/10/18/45/gym-595597_1280.jpg",
+     "https://cdn.pixabay.com/photo/2016/01/08/01/53/gymer-1126999_1280.jpg",
+      "https://cdn.pixabay.com/photo/2017/01/08/10/41/sports-1962574_1280.jpg", 
+      "https://cdn.pixabay.com/photo/2013/02/26/02/14/exercise-86200_1280.jpg",
+       "https://cdn.pixabay.com/photo/2014/04/24/17/56/fitness-studio-331569_1280.jpg",
+        "https://cdn.pixabay.com/photo/2013/04/14/22/43/oak-ridge-104060_1280.jpg", 
+        "https://cdn.pixabay.com/photo/2014/11/11/15/24/gym-526995_1280.jpg", 
+        "https://cdn.pixabay.com/photo/2019/11/27/12/28/weights-4656858_1280.jpg"]
     return (
         <div className="galeria">
             <Slider {...settings}>
@@ -49,7 +58,7 @@ const SlickCarousel = () => {
 
             {liftImage.map((item, index) => (
         <div key={index} className="divImg">
-          <img src={item} className="w-100 h-100 object-fit-cover"/>
+          <img src={item} />
         </div>
       ))}
 

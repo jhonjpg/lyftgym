@@ -12,7 +12,7 @@ const FrontPg = () => {
 
 <div className="frontimgPage">
 
-<div className="containerImg"> <img src="img/gymFront.jpg" alt="" /></div>
+<div className="containerImg"> <img src="gympro.webp" alt="" /></div>
 
 
 <div className="header"> 

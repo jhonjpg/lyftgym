@@ -46,7 +46,7 @@ const   contactoFour = () => {
 <ul className="trainersInfo">
 
 
-<InView>
+<InView triggerOnce="false">
 {({ inView, ref, entry }) => (
 
 <li ref={ref} className={inView ? 'inViews1' : ''}><div className=""><img src="https://images.pexels.com/photos/38630/bodybuilder-weight-training-stress-38630.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" /></div> <strong>Dark jhonson</strong> 
@@ -64,7 +64,7 @@ const   contactoFour = () => {
 </InView>
 
 
-<InView>
+<InView triggerOnce="false">
 {({ inView, ref, entry }) => (
 
 <li ref={ref} className={inView ? 'inViews2' : ''}><div className=""><img src="https://images.pexels.com/photos/3289711/pexels-photo-3289711.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" /></div> <strong>Mark Henry</strong> 
@@ -80,7 +80,7 @@ const   contactoFour = () => {
 </InView>
 
 
-<InView>
+<InView triggerOnce="false">
 {({ inView, ref, entry }) => (
 
 <li ref={ref} className={inView ? 'inViews3' : ''}><div className=""><img src="https://images.pexels.com/photos/136405/pexels-photo-136405.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" /></div> <strong>Tina Paterson</strong> 
@@ -98,7 +98,7 @@ const   contactoFour = () => {
 
 
 
-<InView>
+<InView triggerOnce="false">
 {({ inView, ref, entry }) => (
 
 <li ref={ref} className={inView ? 'inViews4' : ''}><div className=""><img src="https://images.pexels.com/photos/1638324/pexels-photo-1638324.jpeg?auto=compress&cs=tinysrgb&w=800" alt="" /></div> <strong>Janet Spring</strong> 
